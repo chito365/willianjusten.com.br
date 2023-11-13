@@ -8,6 +8,7 @@ function transformPostsToSearchObjects(posts) {
       title: post.frontmatter.title,
       main_class: post.frontmatter['main-class'],
       description: post.frontmatter.description,
+      content: post.content.substr(0, 5000),
       fields: {
         slug: post.slug
       },
